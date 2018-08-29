@@ -29,17 +29,17 @@ public class Main {
 		//m.getObjects() contains all objets check on 
 		//com.flagstone.transform.MovieDecoder.java
 		for (MovieTag mt : m.getObjects()) {
-            if (mt instanceof DoAction) {//in AS2 contains frame1 script
-            	DoAction d = ((DoAction)mt);
+            		if (mt instanceof DoAction) {//in AS2 contains frame1 script
+            			DoAction d = ((DoAction)mt);
             	
-            } else if (mt instanceof DoABC) {//in AS3 contains frame1 scripts and classes
-            	DoABC tmp = ((DoABC)mt);
+            		} else if (mt instanceof DoABC) {//in AS3 contains frame1 scripts and classes
+            			DoABC tmp = ((DoABC)mt);
 				
 				//ABCFile Library -->
-            	ByteBufferFlash bbuf = ByteBufferFlash.wrap(tmp.getData());
-            	AbcFile abcFile = new AbcFile(0, bbuf);
+            			ByteBufferFlash bbuf = ByteBufferFlash.wrap(tmp.getData());
+            			AbcFile abcFile = new AbcFile(0, bbuf);
 			}
-        }
+        	}
 	}
 }
 ```
