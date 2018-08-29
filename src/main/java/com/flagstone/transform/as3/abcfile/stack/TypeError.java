@@ -1,0 +1,4 @@
+package com.flagstone.transform.as3.abcfile.stack;
+
+public class TypeError
+extends Exception {}
